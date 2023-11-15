@@ -15,7 +15,7 @@ const Hero = (props) => (
           Hello <br />
         </SectionTitle>
         <SectionText>
-          This is Sufyan Khatri, I am full stack developer having 3+ years of
+          This is Sufyan Khatri, I am full stack developer having 4+ years of
           experience in development, deployment and testing of modern web and
           mobile applications
         </SectionText>

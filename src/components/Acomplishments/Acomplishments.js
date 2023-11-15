@@ -11,7 +11,7 @@ const data = [
   { number: 3, text: "Open Source Projects" },
   { number: 30, text: "Different commercial projects" },
   { number: 50, text: "Github Followers" },
-  { number: 3, text: "Years of Experience" },
+  { number: 4, text: "Years of Experience" },
 ];
 
 const Acomplishments = () => (
