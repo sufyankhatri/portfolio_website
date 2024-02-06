@@ -1,8 +1,7 @@
+import { Fragment, useMemo } from "react";
 import ImageGallery from "react-image-gallery";
-import { jsx, Image, Box, Heading, Text } from "theme-ui";
-import { useMemo } from "react";
 import Media from "react-media";
-import { Fragment } from "react";
+import { Box, Image } from "theme-ui";
 
 const Carousal = ({ images }) => {
   const imagesWithThumbnail = images.map((image) => {
@@ -27,25 +26,28 @@ const Carousal = ({ images }) => {
       items: imagesWithThumbnail,
       renderItem: (...args) => {
         return args.map((a) => (
-          <Box sx={styles.imageBox}>
-            <Image src={a.original} sx={styles.img} />
+          <Box sx={styles.imageBox} key={a.original}>
+            <Image src={a.original} sx={styles.img} alt="" />
           </Box>
         ));
       },
     }),
+    //eslint-disable-next-line
     []
   );
   return (
     <Media
       queries={{
         small: "(max-width: 600px)",
-        medium: "(min-width: 600px)"
+        medium: "(min-width: 600px)",
       }}
     >
       {(matches) => (
         <Fragment>
           {matches.small && <ImageGallery {...galleryProps} />}
-          {matches.medium && <ImageGallery {...galleryProps} thumbnailPosition="left"/>}
+          {matches.medium && (
+            <ImageGallery {...galleryProps} thumbnailPosition="left" />
+          )}
         </Fragment>
       )}
     </Media>
@@ -55,7 +57,7 @@ const Carousal = ({ images }) => {
 
 const styles = {
   imageBox: {
-    height: ["200px", "200px", null ,"200px"],
+    height: ["200px", "200px", null, "200px"],
     width: "100%",
   },
   img: {

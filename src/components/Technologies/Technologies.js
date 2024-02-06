@@ -19,8 +19,8 @@ const Technologies = () => (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world. From
-      Back-end To Design
+      I&apos;ve worked with a range a technologies in the web development world.
+      From Back-end To Design
     </SectionText>
     <List>
       <div data-aos="fade-right">
