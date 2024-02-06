@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
 import {
   Section,
   SectionText,
-  SectionTitle
-} from '../../styles/GlobalComponents';
-import { LeftSection } from './HeroStyles';
-
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import { LeftSection } from "./HeroStyles";
 
 const Hero = (props) => (
   <div data-aos="fade-right">

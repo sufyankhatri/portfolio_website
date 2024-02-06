@@ -111,7 +111,7 @@ const styles = {
     alignItems: "center",
     subTitle: {
       color: "black",
-      fontSize: ['10px', 2],
+      fontSize: ["10px", 2],
       fontWeight: 400,
       lineHeight: "1.9",
       whiteSpace: "nowrap",

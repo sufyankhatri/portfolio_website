@@ -38,7 +38,7 @@ const ProjectCard = ({ p }) => {
     setIsOpen(false);
   }
   return (
-    <div style={{cursor: 'pointer'}}  onClick={openModal}>
+    <div style={{ cursor: "pointer" }} onClick={openModal}>
       <BlogCard>
         <Img src={p.image} />
         <TitleContent>
