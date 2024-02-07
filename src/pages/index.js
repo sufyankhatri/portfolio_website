@@ -1,3 +1,4 @@
+import Header from "components/Header/Header";
 import Acomplishments from "../components/Acomplishments/Acomplishments";
 import DisplayPicture from "../components/DisplayPicture/DisplayPicture";
 import Hero from "../components/Hero/Hero";

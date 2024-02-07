@@ -3,6 +3,7 @@
 
 import Spiderweb from "../../public/images/spiderweb_admin.png";
 import Taqreeb from "../../public/images/taq.png";
+import SocialConnectBanner from "../../public/images/social-connect-banner.png";
 
 import Buku1 from "assets/overlay-images/buku1.png";
 import Buku2 from "assets/overlay-images/buku2.png";
@@ -33,8 +34,19 @@ export const projects = [
     images: [Gogig1, Gogig2, Gogig3, Gogig4],
     tags: ["Mongo", "Express", "React", "Node"],
     source: "https://www.gogig.com",
-    visit: "https://www.gogig.com",
+    visit: "Gogig Website",
     id: 0,
+  },
+  {
+    title: "Social connect",
+    description:
+      "Social Connect is the ultimate platform for social media influencers and brands to come together in a seamless and efficient manner.",
+    image: SocialConnectBanner,
+    tags: ["React Native", "Android", "Firebase"],
+    source:
+      "https://play.google.com/store/apps/details?id=com.anonymous.socialconnect",
+    visit: "Play Store Link",
+    id: 1,
   },
   {
     title: "Dosi do web",
@@ -43,9 +55,8 @@ export const projects = [
     image: Dosidoweb1,
     images: [Dosidoweb1, Dosidoweb2, Dosidoweb3],
     tags: ["Next.js", "Nest.js", "Docker"],
-    id: 1,
+    id: 2,
   },
-
   {
     title: "E-Taqreeb",
     description:
@@ -74,7 +85,7 @@ export const projects = [
     id: 4,
   },
   {
-    title: "Construct To App",
+    title: "Tripkliq",
     description:
       "Tripkliq is a social media plateform for people who love traveling, users can plan trips, share their experience and photos and much more.",
     image: Tripkliq1,

@@ -216,8 +216,8 @@ export const ButtonFront = styled.button`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 40px;
   background: ${({ alt }) =>
     alt
       ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"

@@ -2,7 +2,7 @@ import { IoIosArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
@@ -15,7 +15,10 @@ export const Container = styled.div`
     grid-template-rows: repeat(2, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
-  }
+  } */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 `;
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
@@ -118,5 +121,49 @@ export const SocialIcons = styled.a`
     background-color: #212d45;
     transform: scale(1.2);
     cursor: pointer;
+  }
+`;
+
+export const BookCallButton = styled.button`
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 40px;
+  background-color: #9f9fff;
+  opacity: ${({ disabled }) => (disabled ? ".5" : "1")};
+  transition: 0.4s ease;
+  font-size: ${({ alt }) => (alt ? "20px" : "24px")};
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: ${({ disabled }) =>
+    disabled
+      ? "inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3)"
+      : "none"};
+
+  &:hover {
+    /* opacity: 0; */
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    opacity: 1;
+    box-shadow:
+      inset 0px 2px 1px rgba(46, 49, 55, 0.15),
+      inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: ${({ alt }) => (alt ? "20px" : "16px")};
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 14px;
   }
 `;
