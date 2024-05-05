@@ -27,6 +27,17 @@ import Dosidoweb3 from "assets/overlay-images/dosidoweb3.JPG";
 
 export const projects = [
   {
+    title: "Buku",
+    description:
+      "Buku is based on web3 and blockchain. We have build this website start!",
+    image: Buku1,
+    images: [Buku1, Buku2, Buku3, Buku4],
+    tags: ["React", "Mongo DB", "Express"],
+    source: "https://buku-client.netlify.app/",
+    visit: "Buku client",
+    id: 4,
+  },
+  {
     title: "Gogig Marketing Website",
     description:
       "GoGig's anonymous platform allows you to safely advance your career without jeopardizing your current job. Sign up to GoGig for free in as little as 2 minutes",
@@ -74,15 +85,6 @@ export const projects = [
     images: [Spiderweb, Spiderweb, Spiderweb],
     tags: ["React", "Mongo DB", "Express"],
     id: 3,
-  },
-  {
-    title: "Buku",
-    description:
-      "Buku is based on web3 and blockchain. We have build this website start!",
-    image: Buku1,
-    images: [Buku1, Buku2, Buku3, Buku4],
-    tags: ["React", "Mongo DB", "Express"],
-    id: 4,
   },
   {
     title: "Tripkliq",
