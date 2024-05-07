@@ -38,6 +38,17 @@ export const projects = [
     id: 4,
   },
   {
+    title: "E-Taqreeb",
+    description:
+      "E-Taqreeb is a online event planning application which makes life easier for event planners.",
+    image: Taqreeb,
+    images: [Taqreeb, Taqreeb, Taqreeb],
+    tags: ["Mongo", "Express", "React", "Node"],
+    source: "https://e-taqreeb.netlify.app/",
+    visit: "E-Taqreeb Client",
+    id: 2,
+  },
+  {
     title: "Gogig Marketing Website",
     description:
       "GoGig's anonymous platform allows you to safely advance your career without jeopardizing your current job. Sign up to GoGig for free in as little as 2 minutes",
@@ -66,15 +77,6 @@ export const projects = [
     image: Dosidoweb1,
     images: [Dosidoweb1, Dosidoweb2, Dosidoweb3],
     tags: ["Next.js", "Nest.js", "Docker"],
-    id: 2,
-  },
-  {
-    title: "E-Taqreeb",
-    description:
-      "E-Taqreeb is a online booking MERN application which solves the problem of arrangement of small and big events",
-    image: Taqreeb,
-    images: [Taqreeb, Taqreeb, Taqreeb],
-    tags: ["Mongo", "Express", "React", "Node"],
     id: 2,
   },
   {
