@@ -1,6 +1,6 @@
 import { Layout } from "layout/Layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
-import { BlogWrapper } from "pages/blog/blog-styles";
+import { BlogWrapper } from "styles/blogStyles";
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
