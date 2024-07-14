@@ -4,7 +4,9 @@ import {
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { LeftSection } from "./HeroStyles";
+import { ImageWrapper, LeftSection } from "./HeroStyles";
+import ProfilePic from "../../../public/images/profile_pic.jpg";
+import Image from "next/image";
 
 const Hero = (props) => (
   <div data-aos="fade-right">
@@ -13,6 +15,22 @@ const Hero = (props) => (
         <SectionTitle main center>
           Hello <br />
         </SectionTitle>
+      </LeftSection>
+    </Section>
+    <Section row nopadding>
+      <LeftSection>
+        <ImageWrapper>
+          <Image
+            src={ProfilePic}
+            alt="Profile Picture"
+            height={320} // Increased height
+            width={320} // Increased width
+          />
+        </ImageWrapper>
+      </LeftSection>
+    </Section>
+    <Section row nopadding>
+      <LeftSection>
         <SectionText>
           This is Sufyan Khatri, I am full stack developer having 4+ years of
           experience in development, deployment and testing of modern web and

@@ -114,11 +114,11 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 
 export const SocialIcons = styled.a`
   transition: 0.3s ease;
-  color: white;
+  color: #000;
   border-radius: 50px;
   padding: 8px;
   &:hover {
-    background-color: #212d45;
+    background-color: #e3e1e1;
     transform: scale(1.2);
     cursor: pointer;
   }
@@ -126,14 +126,14 @@ export const SocialIcons = styled.a`
 
 export const BookCallButton = styled.button`
   border: none;
-  border-radius: 50px;
+  border-radius: 5px;
   color: #fff;
   display: flex;
   top: 0;
   left: 0;
   width: 200px;
   height: 40px;
-  background-color: #9f9fff;
+  background-color: #4caf50;
   opacity: ${({ disabled }) => (disabled ? ".5" : "1")};
   transition: 0.4s ease;
   font-size: ${({ alt }) => (alt ? "20px" : "24px")};

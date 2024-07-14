@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const LeftSection = styled.div`
   width: 100%;
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 80%;
+    /* width: 80%; */
     display: flex;
     flex-direction: column;
 
@@ -16,4 +16,14 @@ export const LeftSection = styled.div`
 
     margin: 0 auto;
   }
+`;
+
+export const MiddleSection = styled.div`
+  width: 100%;
+`;
+
+export const ImageWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `;

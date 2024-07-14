@@ -1,5 +1,6 @@
 import React from "react";
 import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import { SiCloudinary } from "react-icons/si";
 import {
   Section,
   SectionDivider,
@@ -34,7 +35,8 @@ const Technologies = () => (
               Experience with <br />
               React.js <br />
               Next.js <br />
-              Angular.js
+              Angular.js <br />
+              React Native
             </ListParagraph>
           </ListContainer>
         </ListItem>
@@ -49,10 +51,26 @@ const Technologies = () => (
             <ListTitle>Back-End</ListTitle>
             <ListParagraph>
               Experience with <br />
-              Node <br />
+              Node.js <br />
+              Nest.js <br />
               Mongo DB <br />
               PostgreSQL <br />
               Firebase
+            </ListParagraph>
+          </ListContainer>
+        </ListItem>
+      </div>
+      <div data-aos="fade-left">
+        <ListItem>
+          <picture>
+            <SiCloudinary size="3rem" />
+          </picture>
+          <ListContainer>
+            <ListTitle>CI/CD</ListTitle>
+            <ListParagraph>
+              AWS <br />
+              Docker <br />
+              Serverless functions
             </ListParagraph>
           </ListContainer>
         </ListItem>

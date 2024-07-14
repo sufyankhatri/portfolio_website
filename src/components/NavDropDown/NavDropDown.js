@@ -61,14 +61,14 @@ export const DropDownTextContainer = styled.div`
 `;
 
 export const DropDownItemTitle = styled.h2`
-  color: #0f1624;
+  color: #000;
   font-size: 18px;
   line-height: 26px;
   text-align: start;
 `;
 
 export const DropDownItemDesc = styled.p`
-  color: #0f1624;
+  color: #000;
   opacity: 0.5;
   font-size: 14px;
   line-height: 22px;

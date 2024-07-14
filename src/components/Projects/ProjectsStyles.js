@@ -10,6 +10,17 @@ export const Img = styled.img`
   }
 `;
 
+export const ImageWrapper = styled.div`
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+  position: relative; // Important for Next.js Image
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 300px;
+  }
+`;
+
 export const GridContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -44,7 +55,7 @@ export const TitleContent = styled.div`
 export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
-  color: #9cc9e3;
+  color: #000;
   padding: 0.5rem 0;
   font-size: ${(props) => (props.title ? "3rem" : "2rem")};
 `;
@@ -71,7 +82,7 @@ export const CardInfo = styled.p`
   margin-top: 20px;
   width: 100%;
   padding: 0 50px;
-  color: #e4e6e7;
+  color: #333;
   font-style: 2rem;
   line-height: 24px;
   text-align: justify;
@@ -89,15 +100,17 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-  color: #d4c0c0;
-  font-size: 1.6rem;
-  padding: 1rem 1.5rem;
-  background: #6b3030;
-  border-radius: 15px;
-  transition: 0.5s;
-  margin-bottom: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
   &:hover {
-    background: #801414;
+    background-color: #388e3c;
   }
 `;
 
@@ -107,6 +120,6 @@ export const TagList = styled.ul`
   padding: 2rem;
 `;
 export const Tag = styled.li`
-  color: #d8bfbf;
+  color: #b5b3b3;
   font-size: 1.5rem;
 `;

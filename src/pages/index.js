@@ -12,11 +12,10 @@ const Home = () => {
     <Layout>
       <Section grid>
         <Hero />
-        <DisplayPicture />
+        {/* <DisplayPicture /> */}
       </Section>
       <Projects />
       <Technologies />
-      <Acomplishments />
     </Layout>
   );
 };

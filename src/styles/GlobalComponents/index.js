@@ -9,7 +9,7 @@ export const Section = styled.section`
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
 
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
@@ -36,7 +36,6 @@ export const SectionTitle = styled.h2`
     rgba(255, 255, 255, 0.66) 60.15%
   );
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
   padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
 
@@ -59,12 +58,10 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SectionText = styled.p`
-  max-width: 800px;
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -103,11 +100,10 @@ export const SectionDivider = styled.div`
   }
 `;
 export const SectionSubText = styled.p`
-  max-width: 800px;
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: "#000";
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 672px;
@@ -121,7 +117,6 @@ export const SectionSubText = styled.p`
   }
 `;
 export const SecondaryBtn = styled.button`
-  color: #fff;
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.33);
   box-sizing: border-box;
@@ -140,7 +135,7 @@ export const SecondaryBtn = styled.button`
   }
 
   &:hover {
-    color: #0f1624;
+    color: #000;
     background: #fff;
     border: 1px solid #fff;
   }
@@ -182,7 +177,7 @@ export const ButtonBack = styled.div`
   align-items: center;
   justify-content: center;
   margin: ${({ alt, form }) => (alt || form ? "0" : "0 0 80px")};
-  color: #fff;
+  color: #000;
   background: ${({ alt }) =>
     alt
       ? "linear-gradient(270deg, #ff622e 0%, #B133FF 100%)"
@@ -211,7 +206,7 @@ export const ButtonBack = styled.div`
 export const ButtonFront = styled.button`
   border: none;
   border-radius: 50px;
-  color: #fff;
+  color: #000;
   display: flex;
   position: absolute;
   top: 0;

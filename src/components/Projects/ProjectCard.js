@@ -1,28 +1,36 @@
+import Image from "next/image";
 import {
   BlogCard,
   CardInfo,
   ExternalLinks,
-  GridContainer,
   HeaderThree,
   Hr,
+  ImageWrapper,
   Tag,
   TagList,
   TitleContent,
   UtilityList,
-  Img,
 } from "./ProjectsStyles";
-import { useState, useEffect } from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectCard = ({ p }) => {
   return (
     <BlogCard>
-      <Img src={p.image} />
+      <ImageWrapper>
+        <Image
+          src={p.image}
+          alt={p?.alt || ""}
+          layout="fill"
+          objectFit="cover"
+        />
+      </ImageWrapper>
       <TitleContent>
         <HeaderThree>{p.title}</HeaderThree>
         <Hr />
         {p.source && p.visit && (
           <ExternalLinks href={p.source} target="_blank">
             {p.visit}
+            <FaExternalLinkAlt style={{ marginLeft: "10px" }} />
           </ExternalLinks>
         )}
       </TitleContent>

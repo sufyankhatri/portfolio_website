@@ -25,6 +25,36 @@ import Dosidoweb1 from "assets/overlay-images/dosidoweb1.JPG";
 import Dosidoweb2 from "assets/overlay-images/dosidoweb2.JPG";
 import Dosidoweb3 from "assets/overlay-images/dosidoweb3.JPG";
 
+export const deprecatedProjects = [
+  {
+    title: "Dosi do web",
+    description:
+      "Dosi do web is build upon next.js and nest.js and is a CMS for hotels. Any hotel management can buy a template then they can adjust it accordingly.",
+    image: Dosidoweb1,
+    images: [Dosidoweb1, Dosidoweb2, Dosidoweb3],
+    tags: ["Next.js", "Nest.js", "Docker"],
+    id: 2,
+  },
+  {
+    title: "Spider Web Dashboard",
+    description:
+      "Spider web is mobile application built for on site workers, Through This Admin portal on site manager can manager tasks of workers/employees.",
+    image: Spiderweb,
+    images: [Spiderweb, Spiderweb, Spiderweb],
+    tags: ["React", "Mongo DB", "Express"],
+    id: 3,
+  },
+  {
+    title: "Tripkliq",
+    description:
+      "Tripkliq is a social media plateform for people who love traveling, users can plan trips, share their experience and photos and much more.",
+    image: Tripkliq1,
+    images: [Tripkliq1, Tripkliq2, Tripkliq3, Tripkliq4, Tripkliq5],
+    tags: ["React", "Mongo DB", "Express", "TypeScript"],
+    id: 5,
+  },
+];
+
 export const projects = [
   {
     title: "Buku",
@@ -69,33 +99,6 @@ export const projects = [
       "https://play.google.com/store/apps/details?id=com.anonymous.socialconnect",
     visit: "Play Store Link",
     id: 1,
-  },
-  {
-    title: "Dosi do web",
-    description:
-      "Dosi do web is build upon next.js and nest.js and is a CMS for hotels. Any hotel management can buy a template then they can adjust it accordingly.",
-    image: Dosidoweb1,
-    images: [Dosidoweb1, Dosidoweb2, Dosidoweb3],
-    tags: ["Next.js", "Nest.js", "Docker"],
-    id: 2,
-  },
-  {
-    title: "Spider Web Dashboard",
-    description:
-      "Spider web is mobile application built for on site workers, Through This Admin portal on site manager can manager tasks of workers/employees.",
-    image: Spiderweb,
-    images: [Spiderweb, Spiderweb, Spiderweb],
-    tags: ["React", "Mongo DB", "Express"],
-    id: 3,
-  },
-  {
-    title: "Tripkliq",
-    description:
-      "Tripkliq is a social media plateform for people who love traveling, users can plan trips, share their experience and photos and much more.",
-    image: Tripkliq1,
-    images: [Tripkliq1, Tripkliq2, Tripkliq3, Tripkliq4, Tripkliq5],
-    tags: ["React", "Mongo DB", "Express", "TypeScript"],
-    id: 5,
   },
 ];
 
