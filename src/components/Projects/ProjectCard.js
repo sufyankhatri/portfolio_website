@@ -1,11 +1,13 @@
 import Image from "next/image";
 import {
   BlogCard,
+  CardBody,
   CardInfo,
   ExternalLinks,
   HeaderThree,
   Hr,
   ImageWrapper,
+  StackInfoContainer,
   Tag,
   TagList,
   TitleContent,
@@ -24,26 +26,28 @@ const ProjectCard = ({ p }) => {
           objectFit="cover"
         />
       </ImageWrapper>
-      <TitleContent>
-        <HeaderThree>{p.title}</HeaderThree>
-        <Hr />
-        {p.source && p.visit && (
-          <ExternalLinks href={p.source} target="_blank">
-            {p.visit}
-            <FaExternalLinkAlt style={{ marginLeft: "10px" }} />
-          </ExternalLinks>
-        )}
-      </TitleContent>
-      <CardInfo className="card-info">{p.description}</CardInfo>
-      <div>
-        <TitleContent>Stack</TitleContent>
-        <TagList>
-          {p.tags.map((t, i) => {
-            return <Tag key={i}>{t}</Tag>;
-          })}
-        </TagList>
-        <UtilityList></UtilityList>
-      </div>
+      <CardBody>
+        <TitleContent>
+          <HeaderThree>{p.title}</HeaderThree>
+          <Hr />
+          {p.source && p.visit && (
+            <ExternalLinks href={p.source} target="_blank">
+              {p.visit}
+              <FaExternalLinkAlt style={{ marginLeft: "10px" }} />
+            </ExternalLinks>
+          )}
+        </TitleContent>
+        <CardInfo>{p.description}</CardInfo>
+        <StackInfoContainer>
+          <TitleContent>Stack</TitleContent>
+          <TagList>
+            {p.tags.map((t, i) => {
+              return <Tag key={i}>{t}</Tag>;
+            })}
+          </TagList>
+          <UtilityList></UtilityList>
+        </StackInfoContainer>
+      </CardBody>
     </BlogCard>
   );
 };

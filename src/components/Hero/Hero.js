@@ -13,7 +13,7 @@ const Hero = (props) => (
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Hello <br />
+          About Sufyan Khatri
         </SectionTitle>
       </LeftSection>
     </Section>
@@ -31,7 +31,7 @@ const Hero = (props) => (
     </Section>
     <Section row nopadding>
       <LeftSection>
-        <SectionText>
+        <SectionText style={{ marginTop: "10px" }}>
           This is Sufyan Khatri, I am full stack developer having 4+ years of
           experience in development, deployment and testing of modern web and
           mobile applications

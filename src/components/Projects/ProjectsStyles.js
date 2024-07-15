@@ -1,24 +1,17 @@
 import styled from "styled-components";
 
 export const Img = styled.img`
-  width: 400px;
+  width: 100%;
   height: 200px;
   object-fit: cover;
   overflow: hidden;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 300px;
-  }
 `;
 
 export const ImageWrapper = styled.div`
-  width: 400px;
+  width: 100%;
   height: 200px;
   overflow: hidden;
   position: relative; // Important for Next.js Image
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 300px;
-  }
 `;
 
 export const GridContainer = styled.section`
@@ -36,13 +29,13 @@ export const GridContainer = styled.section`
   }
 `;
 export const BlogCard = styled.div`
-  border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
-  width: 400px;
-  height: 600px;
+  width: 440px;
+  height: max-content;
+  border: 1px solid lightgrey;
+  box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.2);
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 300px;
+    width: 320px;
   }
   cursor: "pointer";
 `;
@@ -52,18 +45,17 @@ export const TitleContent = styled.div`
   width: 100%;
 `;
 
-export const HeaderThree = styled.h3`
-  font-weight: 500;
-  letter-spacing: 2px;
+export const HeaderThree = styled.h2`
+  font-weight: 700;
   color: #000;
   padding: 0.5rem 0;
-  font-size: ${(props) => (props.title ? "3rem" : "2rem")};
+  /* font-size: ${(props) => (props.title ? "3rem" : "2rem")}; */
 `;
 
 export const Hr = styled.hr`
   width: 50px;
   height: 3px;
-  margin: 20px auto;
+  margin: 8px auto;
   border: 0;
   background: #d0bb57;
 `;
@@ -79,7 +71,7 @@ export const Intro = styled.div`
 `;
 
 export const CardInfo = styled.p`
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
   padding: 0 50px;
   color: #333;
@@ -122,4 +114,12 @@ export const TagList = styled.ul`
 export const Tag = styled.li`
   color: #b5b3b3;
   font-size: 1.5rem;
+`;
+
+export const StackInfoContainer = styled.div`
+  margin-top: 16px;
+`;
+
+export const CardBody = styled.div`
+  padding: 0px 10px;
 `;

@@ -14,11 +14,7 @@ const Projects = () => {
       <SectionTitle main>Projects</SectionTitle>
       <GridContainer>
         {projects.map((p, i) => {
-          return (
-            <div data-aos="zoom-in-up" key={i}>
-              <ProjectCard p={p} />
-            </div>
-          );
+          return <ProjectCard p={p} />;
         })}
       </GridContainer>
     </Section>
