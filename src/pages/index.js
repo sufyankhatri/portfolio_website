@@ -29,24 +29,27 @@ const Home = () => {
         />
         <meta property="og:image" content="/public/images/profile_pic.jpg" />
         <meta property="og:url" content="http://sufyankhatri.com" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "http://schema.org",
-            "@type": "Person",
-            name: "Sufyan Khatri",
-            url: "http://sufyankhatri.com",
-            jobTitle: "Full Stack Engineer",
-            worksFor: {
-              "@type": "Organization",
-              name: "Freelance",
-            },
-            sameAs: [
-              "http://www.linkedin.com/in/sufyan-khatri-0b6522202/",
-              "http://github.com/sufyankhatri",
-              "https://twitter.com/sufyankhatri1",
-            ],
-          })}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "http://schema.org",
+              "@type": "Person",
+              name: "Sufyan Khatri",
+              url: "http://sufyankhatri.com",
+              jobTitle: "Full Stack Engineer",
+              worksFor: {
+                "@type": "Organization",
+                name: "Freelance",
+              },
+              sameAs: [
+                "http://www.linkedin.com/in/sufyan-khatri-0b6522202/",
+                "http://github.com/sufyankhatri",
+                "https://twitter.com/sufyankhatri1",
+              ],
+            }),
+          }}
+        />
       </Head>
       <Layout>
         <Section grid>
