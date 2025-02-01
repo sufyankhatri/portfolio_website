@@ -24,7 +24,7 @@ import Gogig4 from "assets/overlay-images/gogig4.JPG";
 import Dosidoweb1 from "assets/overlay-images/dosidoweb1.JPG";
 import Dosidoweb2 from "assets/overlay-images/dosidoweb2.JPG";
 import Dosidoweb3 from "assets/overlay-images/dosidoweb3.JPG";
-
+import Banana1 from "assets/overlay-images/banana-cover.jpg";
 export const deprecatedProjects = [
   {
     title: "Dosi do web",
@@ -79,17 +79,6 @@ export const projects = [
     id: 2,
   },
   {
-    title: "Gogig Marketing Website",
-    description:
-      "GoGig's anonymous platform allows you to safely advance your career without jeopardizing your current job. Sign up to GoGig for free in as little as 2 minutes",
-    image: Gogig1,
-    images: [Gogig1, Gogig2, Gogig3, Gogig4],
-    tags: ["Mongo", "Express", "React", "Node"],
-    source: "https://www.gogig.com",
-    visit: "Gogig Website",
-    id: 0,
-  },
-  {
     title: "Social connect",
     description:
       "Social Connect is the ultimate platform for social media influencers and brands to come together in a seamless and efficient manner.",
@@ -99,6 +88,28 @@ export const projects = [
       "https://play.google.com/store/apps/details?id=com.anonymous.socialconnect",
     visit: "Play Store Link",
     id: 1,
+  },
+  {
+    title: "Banana quick commerce",
+    description:
+      "Banana quick commerce is a quick commerce platform for groceries and daily needs.",
+    image: Banana1,
+    tags: ["React Native", "React", "Android", "IOS", "Firebase"],
+    source:
+      "https://play.google.com/store/apps/details?id=com.bananadelivery.customer",
+    visit: "Play Store Link",
+    id: 6,
+  },
+  {
+    title: "Gogig Marketing Website",
+    description:
+      "GoGig's anonymous platform allows you to safely advance your career without jeopardizing your current job. Sign up to GoGig for free in as little as 2 minutes",
+    image: Gogig1,
+    images: [Gogig1, Gogig2, Gogig3, Gogig4],
+    tags: ["Mongo", "Express", "React", "Node"],
+    source: "https://www.gogig.com",
+    visit: "Gogig Website",
+    id: 0,
   },
 ];
 
