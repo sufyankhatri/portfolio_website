@@ -43,7 +43,7 @@ const Home = () => {
                 name: "Freelance",
               },
               sameAs: [
-                "http://www.linkedin.com/in/sufyan-khatri-0b6522202/",
+                "http://www.linkedin.com/in/sufiyan-khatri-0b6522202/",
                 "http://github.com/sufyankhatri",
                 "https://twitter.com/sufyankhatri1",
               ],

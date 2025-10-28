@@ -32,7 +32,7 @@ const Hero = (props) => (
     <Section row nopadding>
       <LeftSection>
         <SectionText style={{ marginTop: "10px" }}>
-          This is Sufyan Khatri, I am full stack developer having 4+ years of
+          This is Sufyan Khatri, I am full stack developer having 5+ years of
           experience in development, deployment and testing of modern web and
           mobile applications
         </SectionText>
