@@ -20,7 +20,7 @@ const Footer = () => {
           <SocialIcons href="https://github.com/sufyankhatri">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/sufyan-khatri-0b6522202/">
+          <SocialIcons href="https://www.linkedin.com/in/sufiyan-khatri-0b6522202/">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
           <SocialIcons href="mailto:sufyankhatree@gmail.com">
