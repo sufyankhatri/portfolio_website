@@ -85,7 +85,7 @@ export const projects = [
     image: SocialConnectBanner,
     tags: ["React Native", "Android", "Firebase"],
     source:
-      "https://play.google.com/store/apps/details?id=com.anonymous.socialconnect",
+      "https://play.google.com/store/apps/details?id=com.spandev.socialconnect",
     visit: "Play Store Link",
     id: 1,
   },
