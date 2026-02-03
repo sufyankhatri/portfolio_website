@@ -8,6 +8,7 @@ import {
   Hr,
   ImageWrapper,
   StackInfoContainer,
+  StackLabel,
   Tag,
   TagList,
   TitleContent,
@@ -39,7 +40,7 @@ const ProjectCard = ({ p }) => {
         </TitleContent>
         <CardInfo>{p.description}</CardInfo>
         <StackInfoContainer>
-          <TitleContent>Stack</TitleContent>
+          <StackLabel>Stack</StackLabel>
           <TagList>
             {p.tags.map((t, i) => {
               return <Tag key={i}>{t}</Tag>;

@@ -25,6 +25,8 @@ import Dosidoweb1 from "assets/overlay-images/dosidoweb1.JPG";
 import Dosidoweb2 from "assets/overlay-images/dosidoweb2.JPG";
 import Dosidoweb3 from "assets/overlay-images/dosidoweb3.JPG";
 import Banana1 from "assets/overlay-images/banana-cover.jpg";
+import JobTracker1 from "assets/overlay-images/job-hunt-board.jpg";
+
 export const deprecatedProjects = [
   {
     title: "Dosi do web",
@@ -68,15 +70,15 @@ export const projects = [
     id: 4,
   },
   {
-    title: "E-Taqreeb",
+    title: "Job Tracker",
     description:
-      "E-Taqreeb is a online event planning application which makes life easier for event planners.",
-    image: Taqreeb,
-    images: [Taqreeb, Taqreeb, Taqreeb],
-    tags: ["Mongo", "Express", "React", "Node"],
-    source: "https://e-taqreeb.netlify.app/",
-    visit: "E-Taqreeb Client",
-    id: 2,
+      "Job Tracker is a comprehensive job application tracking system that helps users manage their job search process with analytics, status tracking, and interview scheduling.",
+    image: JobTracker1,
+    images: [JobTracker1],
+    tags: ["React", "Supabase", "Database", "Authentication"],
+    source: "https://job-hunt-board.vercel.app/",
+    visit: "Job Tracker App",
+    id: 7,
   },
   {
     title: "Social connect",
@@ -99,6 +101,17 @@ export const projects = [
       "https://play.google.com/store/apps/details?id=com.bananadelivery.customer",
     visit: "Play Store Link",
     id: 6,
+  },
+  {
+    title: "E-Taqreeb",
+    description:
+      "E-Taqreeb is a online event planning application which makes life easier for event planners.",
+    image: Taqreeb,
+    images: [Taqreeb, Taqreeb, Taqreeb],
+    tags: ["Mongo", "Express", "React", "Node"],
+    source: "https://e-taqreeb.netlify.app/",
+    visit: "E-Taqreeb Client",
+    id: 2,
   },
   {
     title: "Gogig Marketing Website",
