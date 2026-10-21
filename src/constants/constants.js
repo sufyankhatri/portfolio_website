@@ -26,6 +26,7 @@ import Dosidoweb2 from "assets/overlay-images/dosidoweb2.JPG";
 import Dosidoweb3 from "assets/overlay-images/dosidoweb3.JPG";
 import Banana1 from "assets/overlay-images/banana-cover.jpg";
 import JobTracker1 from "assets/overlay-images/job-hunt-board.jpg";
+import RealtorAI1 from "assets/overlay-images/realtor-ai.jpg";
 
 export const deprecatedProjects = [
   {
@@ -58,6 +59,17 @@ export const deprecatedProjects = [
 ];
 
 export const projects = [
+  {
+    title: "Realtor AI",
+    description:
+      "Realtor AI helps real estate agents respond to buyer questions. It answers from a knowledge base with retrieval-augmented generation (RAG), shows which sources it used and a confidence score, keeps a conversation history per lead, and lets an agent approve each reply or switch to autopilot. Built end to end with Google sign-in limited to an allowlist of emails, and deployed on Vercel and a VPS.",
+    image: RealtorAI1,
+    images: [RealtorAI1],
+    tags: ["React", "FastAPI", "OpenAI", "pgvector", "PostgreSQL", "Docker"],
+    source: "https://real-estate-ai.esofius.online/",
+    visit: "Live app (demo access on request)",
+    id: 8,
+  },
   {
     title: "Buku",
     description:
