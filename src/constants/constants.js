@@ -26,7 +26,7 @@ import Dosidoweb2 from "assets/overlay-images/dosidoweb2.JPG";
 import Dosidoweb3 from "assets/overlay-images/dosidoweb3.JPG";
 import Banana1 from "assets/overlay-images/banana-cover.jpg";
 import JobTracker1 from "assets/overlay-images/job-hunt-board.jpg";
-import RealtorAI1 from "assets/overlay-images/realtor-ai.jpg";
+import RealtorAI1 from "assets/overlay-images/realtor-ai-cover.jpg";
 
 export const deprecatedProjects = [
   {
