@@ -125,6 +125,41 @@ export const SocialIcons = styled.a`
   }
 `;
 
+export const DownloadCVButton = styled.button`
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+  color: #4caf50;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  margin-right: 12px;
+  background-color: transparent;
+  transition: 0.4s ease;
+  font-size: 24px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  &:focus {
+    outline: none;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 16px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 14px;
+    width: 120px;
+    margin-right: 6px;
+  }
+`;
+
 export const BookCallButton = styled.button`
   border: none;
   border-radius: 5px;

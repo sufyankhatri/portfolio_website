@@ -1,6 +1,7 @@
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import {
   BookCallButton,
+  DownloadCVButton,
   Container,
   Div1,
   Div2,
@@ -21,6 +22,9 @@ const Header = () => (
       </SocialIcons>
     </Div1>
     <Div2>
+      <a href="/Muhammad_Sufiyan_CV.pdf" download="Muhammad_Sufiyan_CV.pdf">
+        <DownloadCVButton>Download CV</DownloadCVButton>
+      </a>
       <a href="https://calendly.com/sufyankhatree/15min" target="_blank">
         <BookCallButton>Book a call</BookCallButton>
       </a>
